@@ -61,13 +61,17 @@ h4 {
 }
 
 .reports {
+	background: #33FF33;
 	border: 1px solid #73AD21;
-	background: #0079ff;
+	border-radius: 10px;
+	box-shadow: 5px 10px 20px #000;
 	opacity: 0.8;
 	margin-top: 1%;
 	margin-bottom: 2%;
 	color: black;
 	padding: auto;
+
+
 }
 
 .bodyContainer {

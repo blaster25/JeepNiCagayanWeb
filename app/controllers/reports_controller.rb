@@ -1,6 +1,7 @@
 class ReportsController < ApplicationController
   before_action :set_report, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!, only: [ :new, :edit, :update, :destroy ]
+  protect_from_forgery with: :null_session
 
   # GET /reports
   # GET /reports.json
@@ -27,10 +28,12 @@ class ReportsController < ApplicationController
   def create
     @report = Report.new(report_params)
 
+  
+
     respond_to do |format|
       if @report.save
-        format.html { redirect_to @report, notice: 'Report was successfully created.' }
-        format.json { render :show, status: :created, location: @report }
+        # format.html { redirect_to @report, notice: 'Report was successfully created.' }
+        format.json { render :show, status: :created }
       else
         format.html { render :new }
         format.json { render json: @report.errors, status: :unprocessable_entity }

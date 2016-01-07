@@ -1,0 +1,85 @@
+a{
+	color: #000 !important;
+	text-decoration: none !important;
+
+}
+
+a:hover {
+	color: white !important;
+}
+
+h4 {
+	margin-top: 1px !important;
+}
+
+.deleteBtn {
+	width: 22px;
+	border-radius: 20px;
+	background-color:  red !important;
+	padding-bottom: 3px;
+	box-shadow: 1px 1px 5px #000;
+	margin: 0px;
+	
+}
+
+.deleteBtnContainerRigth {
+	width: 22px;
+	margin-left: auto;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.navbar-jnc {
+	
+	background-color:  #007fff !important;
+}
+
+.brand {
+	color: white;
+}
+
+.brand:hover { 
+    color: green;
+}
+
+.userOption {
+	color: white !important;
+}
+
+.userOption:hover { 
+    color: black !important;
+}
+
+.centerContainer1 {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.reports {
+	border: 1px solid #73AD21;
+	background: #0079ff;
+	opacity: 0.8;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	color: black;
+	padding: auto;
+}
+
+.bodyContainer {
+	height: 90%;
+}
+
+.well {
+	background: inherit !important;
+	border: none !important;
+}
+
+.navbar {
+	margin-bottom: 0px !important;
+}
+

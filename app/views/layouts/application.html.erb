@@ -8,10 +8,11 @@
 </head>
 <body>
 	
-
-	<p class="alert"><%= alert %></p>
+	<%= render 'layouts/header' %>
 	
-	<%= yield %>
-
+	<div class="bodyContainer well">
+		<span class="alert"><%= alert %></span>
+		<%= yield %>
+	</div>
 </body>
 </html>

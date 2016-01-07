@@ -14,7 +14,9 @@ gem 'web-console', '~> 2.0'
 gem 'spring'
 
 gem 'devise', '~> 3.5', '>= 3.5.3'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
+gem 'rack-cors', '~> 0.4.0'
 # group :development, :test do
 #   gem 'byebug'
 #   gem 'web-console', '~> 2.0'

@@ -1,11 +1,15 @@
-a{
+body {
+ background: #FFF8DC !important;
+}
+
+a {
 	color: #000 !important;
 	text-decoration: none !important;
-
 }
 
 a:hover {
-	color: white !important;
+	background: none !important;
+	color: blue !important;
 }
 
 h4 {
@@ -39,7 +43,7 @@ h4 {
 }
 
 .brand:hover { 
-    color: green;
+    color: #FDDF5B;
 }
 
 .userOption {
@@ -61,7 +65,7 @@ h4 {
 }
 
 .reports {
-	background: #33FF33;
+	background: #FFDB58;
 	border: 1px solid #73AD21;
 	border-radius: 10px;
 	box-shadow: 5px 10px 20px #000;
@@ -69,13 +73,56 @@ h4 {
 	margin-top: 1%;
 	margin-bottom: 2%;
 	color: black;
+	padding: 20px;
+}
+
+.reportsContainer {
+	background: #EDECEA;
+	border-radius: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 400px;
+	width: 80%;
+	overflow-y: scroll;
+	margin: auto;
+
+	
+}
+
+.showReport {
+	background: #FFDB58;
+	border: 1px solid #73AD21;
+	border-radius: 10px;
+	box-shadow: 5px 10px 20px #000;
+	opacity: 0.8;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	color: black;
+	padding-top: 15px;
+	padding-bottom: 20px;
 	padding: auto;
+	width: 50%;
+}
 
-
+.accountAction {
+	background: #FFDB58;
+	border: 1px solid #73AD21;
+	border-radius: 10px;
+	box-shadow: 5px 10px 20px #000;
+	opacity: 0.8;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	color: black;
+	padding: 10px;
+	width: 35%;
+	text-align: center;
 }
 
 .bodyContainer {
 	height: 90%;
+	padding-top: 1% !important;
 }
 
 .well {
@@ -87,3 +134,6 @@ h4 {
 	margin-bottom: 0px !important;
 }
 
+.indentText {
+	margin-left: 15px;
+}

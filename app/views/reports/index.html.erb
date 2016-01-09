@@ -1,30 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="centerText">Feed Back logs</h1>
+<h1 class="centerText mainTitle">Feed Back logs</h1>
 
-<main class="reportsContain">
-  <% @reports.each do |report| %>
-    
-    <article class="reports centerContainer1">
+<main class="reportsContainer">
+  <% if @reports != nil %>
+    <% @reports.each do |report| %>
       
-      <% if user_signed_in? %>
-        <div class="deleteBtnContainerRigth centerText">
-        <%= link_to(report, method: :delete, data: { confirm: 'Want delete this ?' }) do %>
-          <div class="deleteBtn">
-          X
+      <article class="reports centerContainer1">
+        
+        <% if user_signed_in? %>
+          <div class="deleteBtnContainerRigth centerText">
+          <%= link_to(report, method: :delete, data: { confirm: 'Want delete this ?' }) do %>
+            <div class="deleteBtn">
+            X
+            </div>
+          <% end %>   
           </div>
-        <% end %>   
-        </div>
-      <% end %>
+        <% end %>
 
-      <%= link_to(report) do %>
-        <h4><%= report.title %></h4>
-        <p><%= report.description %></p>
-      <% end %>
-      
-    </article>
+        <%= link_to(report) do %>
+          <h4><%= report.title %></h4>
+          <p class="indentText"><%= report.description %></p>
+          <date><%= time_ago_in_words(report.created_at) %></date>
+        <% end %>
+        
+      </article>
     
-  <% end %>
+    <% end %>
+  <% else %>
+
+    <article class="reports centerContainer1">
+      no feed back found
+    </article>
+
+  <% end %>    <!-- endof if statement for checker if reports is null/nil-->
 </main>
 
 

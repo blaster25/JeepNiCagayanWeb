@@ -4,4 +4,8 @@ Rails.application.routes.draw do
 
   root 'reports#index'
   
+  as :user do
+  	get "/jnc_sign_up" => "devise/registrations#new"
+  end
+
 end

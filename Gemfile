@@ -23,6 +23,6 @@ gem 'rack-cors', '~> 0.4.0'
 #   gem 'spring'
 # end
 
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'pg' # heroku
 gem 'taps'

@@ -6,7 +6,7 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def index
-    @reports = Report.all
+    @reports = Report.all.order("created_at DESC")
   end
 
   # GET /reports/1
@@ -63,6 +63,15 @@ class ReportsController < ApplicationController
     end
   end
 
+  # def delete_all
+  #   # @reports = Report.all
+  #   @report.destroy_all
+  #   respond_to do |format|
+  #     format.html { redirect_to reports_url, notice: 'Report was successfully destroyed.' }
+  #     format.json { head :no_content }
+  #   end
+  # end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_report

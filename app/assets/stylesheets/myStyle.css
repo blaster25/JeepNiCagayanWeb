@@ -1,6 +1,15 @@
-body {
- background: #FFF8DC !important;
+html {
+	height: 100% !important;
 }
+
+body {
+ /*background: #FFF8DC !important;*/
+ /*background-image: url(/assets/images/preview.png) !important;*/
+ background-image: url(preview.png) !important;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+
 
 a {
 	color: #000 !important;
@@ -14,6 +23,15 @@ a:hover {
 
 h4 {
 	margin-top: 1px !important;
+}
+
+.btn-primary {
+ background: #0028ff !important;
+}
+
+.bodyContainer {
+	height: 100% !important;
+	/*padding-top: 1% !important;*/
 }
 
 .deleteBtn {
@@ -43,15 +61,15 @@ h4 {
 
 .navbar-jnc {
 	
-	background-color:  #007fff !important;
+	background-color:  #FFD700 !important;
 }
 
-.brand {
-	color: white;
+.brand:hover {
+	color: #0028ff;
 }
 
-.brand:hover { 
-    color: #FDDF5B;
+.brand { 
+    color: #ef473a;
 }
 
 .userOption {
@@ -72,12 +90,17 @@ h4 {
     text-align: center;
 }
 
+.fareTable {
+	background-color: #0028ff;
+}
+
 .reports {
 	background: #FFDB58;
 	border: 1px solid #73AD21;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	box-shadow: 5px 10px 20px #000;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
+	width: 95%;
 	margin-top: 1%;
 	margin-bottom: 2%;
 	color: black;
@@ -85,17 +108,19 @@ h4 {
 }
 
 .reportsContainer {
-	background: #EDECEA;
-	border-radius: 25px;
+	/*background: #EDECEA;*/
+	/*background: #FFD700;*/
+	/*background: transparent;*/
 	padding-top: 20px;
 	padding-bottom: 20px;
 	height: 400px;
-	width: 80%;
+	width: 50%;
 	overflow-y: scroll;
 	margin: auto;
-
+	
 	
 }
+
 
 .showReport {
 	background: #FFDB58;
@@ -114,11 +139,11 @@ h4 {
 }
 
 .accountAction {
-	background: #FFDB58;
+	/*background: #FFDB58;*/
 	border: 1px solid #73AD21;
 	border-radius: 10px;
 	box-shadow: 5px 10px 20px #000;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 	margin: auto;
 	margin-top: 1%;
 	margin-bottom: 2%;
@@ -128,10 +153,6 @@ h4 {
 	text-align: center;
 }
 
-.bodyContainer {
-	height: 90%;
-	padding-top: 1% !important;
-}
 
 .well {
 	background: inherit !important;

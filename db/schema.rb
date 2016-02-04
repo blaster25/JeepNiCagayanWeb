@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160107055338) do
+ActiveRecord::Schema.define(version: 20160204083605) do
+
+  create_table "fares", force: :cascade do |t|
+    t.float    "farePriceReg"
+    t.float    "farePriceSp"
+    t.float    "fareIncReg"
+    t.float    "fareIncSp"
+    t.text     "fareDescription"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "reports", force: :cascade do |t|
     t.string   "title"

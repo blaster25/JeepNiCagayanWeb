@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Farepricereg:</strong>
+  <%= @fare.farePriceReg %>
+</p>
+
+<p>
+  <strong>Farepricesp:</strong>
+  <%= @fare.farePriceSp %>
+</p>
+
+<p>
+  <strong>Fareincreg:</strong>
+  <%= @fare.fareIncReg %>
+</p>
+
+<p>
+  <strong>Fareincsp:</strong>
+  <%= @fare.fareIncSp %>
+</p>
+
+<p>
+  <strong>Faredescription:</strong>
+  <%= @fare.fareDescription %>
+</p>
+
+<%= link_to 'Edit', edit_fare_path(@fare) %> |
+<%= link_to 'Back', fares_path %>

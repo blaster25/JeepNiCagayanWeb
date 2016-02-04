@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  farePriceReg: 1.5
+  farePriceSp: 1.5
+  fareIncReg: 1.5
+  fareIncSp: 1.5
+  fareDescription: MyText
+
+two:
+  farePriceReg: 1.5
+  farePriceSp: 1.5
+  fareIncReg: 1.5
+  fareIncSp: 1.5
+  fareDescription: MyText

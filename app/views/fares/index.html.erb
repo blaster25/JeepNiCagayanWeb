@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="centerText">Listing Fares</h1>
+
+<table class="table fareTable">
+  <thead>
+    <tr>
+      <th>Fare Price Regular</th>
+      <th>Fare Price Special Privilege</th>
+      <th>Fare Increment Regula</th>
+      <th>Fare Increment Special Privilege</th>
+      <th>Fare Description</th>
+      <th>Date </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fares.each do |fare| %>
+      <tr>
+        <td><%= fare.farePriceReg %></td>
+        <td><%= fare.farePriceSp %></td>
+        <td><%= fare.fareIncReg %></td>
+        <td><%= fare.fareIncSp %></td>
+        <td><%= fare.fareDescription %></td>
+        <td><%= fare.created_at %></td>
+        
+        <% if user_signed_in? %>
+          <td><%= link_to 'Show', fare %></td>
+          <td><%= link_to 'Edit', edit_fare_path(fare) %></td>
+          <td><%= link_to 'Destroy', fare, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<% if user_signed_in? %>
+  <%= link_to 'Create New Fare', new_fare_path %>
+<% end %>
+
